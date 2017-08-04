@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game_container{
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 100px auto;
+    background-image: url('images/splashscreen.png');
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+}
+.game_layer{
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*开始菜单画面*/
+#game_start_screen {
+}
+#game_start_screen>div{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+#game_start_screen img{
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+/*关卡选择界面*/
+#level_select_screen{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+#level_select_screen input {
+    margin: 20px;
+    cursor: pointer;
+    color:yellow;
+    font-size: 20px;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background-image:url('images/icons/level.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/*加载画面*/
+#loading_screen{
+    background-color:rgba(100, 100, 100, 0.3) ;
+}
+#loading_message{
+    margin-top: 400px;
+    text-align: center;
+    height: 48px;
+    color:white;
+    background-image: url('images/loader.gif');
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-position: center;
+    font: 12px Arial;
+}
+/*计分板*/
+#score_screen {
+    height: 60px;
+    font:32px Comic Sans MS;
+    text-shadow: 0 0 2px #000;
+    color:white;
+}
+#score_screen img{
+    opacity: 0.6;
+    top:10px;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#score_screen #score{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+

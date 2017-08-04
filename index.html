@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="game.js"></script>
+</head>
+<body>
+    <div id="game_container">
+        <canvas id="game_canvas" width="640" height="480" class="game_layer">
+
+        </canvas>
+        <div id="score_screen" class="game_layer">
+            <img id="toggle_music" src="images/icons/sound.png"  alt="">
+            <img src="images/icons/prev.png" alt="">
+            <span id="score"> Score: 0</span>
+        </div>
+
+        <div id="game_start_screen" class="game_layer">
+            <div>
+                <img src="images/icons/play.png" alt="Play Game" onclick="game.showLevelScreen()">
+                <img src="images/icons/settings.png" alt="Settings">
+            </div>
+        </div>
+        <div id="level_select_screen" class="game_layer">
+
+        </div>
+        <div id="loading_screen" class="game_layer">
+            <div id="loading_message">
+
+            </div>
+        </div>
+        <div id="ending_screen" class="game_layer">
+            <div>
+                <p id="ending_screen" > The Level Is Over Message</p>
+                <p id="play_current_level">
+                    <img src="images/icons/prev.png" alt=""> Replay Current Level
+                </p>
+                <p id="play_next_level">
+                    <img src="images/icons/next.png" alt=""> Play Next Level
+                </p>
+                <p id="show_level_screen">
+                    <img src="images/icons/return.png" alt=""> Return to Level screen
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
