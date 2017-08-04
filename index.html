@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="../js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Box2dWeb-2.1.a.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="game.js"></script>
 </head>
 <body>
@@ -13,8 +14,8 @@
 
         </canvas>
         <div id="score_screen" class="game_layer">
-            <img id="toggle_music" src="images/icons/sound.png"  alt="">
-            <img src="images/icons/prev.png" alt="">
+            <img id="toggle_music" src="images/icons/sound.png" onclick="game.toggleBackgroundMusic()"  alt="">
+            <img src="images/icons/prev.png" alt="" onclick="game.restartLevel();">
             <span id="score"> Score: 0</span>
         </div>
 
@@ -35,17 +36,18 @@
         <div id="ending_screen" class="game_layer">
             <div>
                 <p id="ending_screen" > The Level Is Over Message</p>
-                <p id="play_current_level">
-                    <img src="images/icons/prev.png" alt=""> Replay Current Level
+                <p id="play_current_level" onclick="game.restartLevel()">
+                    <img src="images/icons/prev.png"  alt=""> Replay Current Level
                 </p>
-                <p id="play_next_level">
+                <p id="play_next_level" onclick="game.startNextLevel()">
                     <img src="images/icons/next.png" alt=""> Play Next Level
                 </p>
-                <p id="show_level_screen">
+                <p id="show_level_screen" onclick="game.showLevelScreen()">
                     <img src="images/icons/return.png" alt=""> Return to Level screen
                 </p>
             </div>
         </div>
     </div>
+    <canvas id="debugcanvas" width="1000" height="480" style=" border: 1px solid black;"></canvas>
 </body>
 </html>

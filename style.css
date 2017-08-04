@@ -88,3 +88,30 @@
     right: 20px;
 }
 
+/*结束界面*/
+#ending_screen{
+    text-align: center;
+}
+#ending_screen div{
+    height: 430px;
+    padding-top: 50px;
+    border: 1px ;
+    background: rgba(1,1,1,0.5);
+    text-align: left;
+    padding-left: 100px;
+}
+#ending_screen p{
+    font: 20px Comic Sans MS;
+    text-shadow: 0 0 2px #000;
+    color:white;
+}
+#ending_screen p img{
+    top:10px;
+    position: relative;
+    cursor: pointer;
+}
+#ending_screen #ending_message {
+    font: 32px "Comic Sans MS";
+    text-shadow: 0 0 2px #000;
+    color:white;
+}
